@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(227, 212, 192);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -32px;
+}
+.name #gname {
+  justify-content: center;
+  font-weight: 900;
+
+  display: flex;
+
+  font-size: 5vw;
+  /* making text tranpartent and adding border */
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-transform: capitalize;
+}
+.name #gname:hover {
+  color: black;
+}
+.name p {
+  justify-content: flex-end;
+  font-weight: 900;
+  font-size: 20pxpx;
+  display: flex;
+  background-color: rgb(227, 212, 192);
+  cursor: pointer;
+  color: black;
+}
+.name p::selection {
+  color: #fff;
+  background-color: black;
+}
+
+#panel {
+  width: 80vw;
+  height: 78vh;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -50px;
+  border: 1px solid black;
+}
+
+#panel2 {
+  padding: 0px 30%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(42, 96, 42);
+}
+.box {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(9, 76, 9);
+  font-size: 18px;
+  font-weight: 600;
+}
+#elem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#elem h2 {
+  font-weight: 500;
+  font-size: 17px;
+}
+#panel3 {
+  width: 100%;
+  height: calc(100vh - 105px);
+  flex-wrap: wrap;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hitters {
+  width: 31px;
+  height: 31px;
+  background-color: rgb(39, 134, 39);
+  color: white;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  animation: ease-in-out 1s;
+}
+.hitters:active {
+  scale: 0.3;
+  background-color: rgb(1, 40, 1);
+}
+
+#over {
+  padding: 6px 14px;
+  font-size: 2.5vw;
+  font-weight: 600;
+  border-radius: 42px;
+  background-color: rgb(39, 134, 39);
+  transition: ease-in-out 0.4s;
+  box-shadow: 0px 1px 6px;
+  display: none;
+}
+#over:active {
+  scale: 0.5;
+}
+
+.overg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
